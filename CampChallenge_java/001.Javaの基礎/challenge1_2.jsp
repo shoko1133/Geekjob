@@ -4,6 +4,8 @@
     Author     : shochan
 --%>
 
+<%@page import="java.util.List"%>
+<%@page import="java.util.Arrays"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -15,18 +17,15 @@
         <%
             int age=20;
             String name="ひがしだ";
+            String s = String.valueOf(age+5);
             
-            out.print("こんにちは<br>");
-            out.print(name+"しょうこです<br>");
-          
-            out.print(age+5);
-            out.print("歳です<br>");
+            String[] array={"こんにちは",name+"しょうこです",s+"歳です"};
+            List<String> list=Arrays.asList(array);
             
-            
-
-            
-            
-            
-            %>
+            for (String str : list) {
+                out.println(str);
+                out.println("<br>");    
+            } 
+        %>
     </body>
 </html>
