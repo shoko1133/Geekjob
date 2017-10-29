@@ -21,6 +21,8 @@
           case 'あ':
               out.print("日本語");
               break;
+          default:
+              out.print("しょうちゃん");
           }
         %>
     </body>
