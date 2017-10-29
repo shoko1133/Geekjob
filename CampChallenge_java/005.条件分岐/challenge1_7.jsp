@@ -20,16 +20,8 @@
               break;
           case 'あ':
               out.print("日本語");
-          break;
-          
+              break;
           }
-                  
-
-          
-          
-          
-
-        
         %>
     </body>
 </html>
